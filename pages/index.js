@@ -3,6 +3,7 @@ import Header from "@components/Header";
 import Footer from "@components/Footer";
 import FeedbackForm from "@components/FeedbackForm";
 import JokeBlock from "@components/JokeBlock";
+import Button from "@components/atom/Button";
 
 export default function Home() {
   return (
@@ -15,12 +16,15 @@ export default function Home() {
       <main>
         <Header title="Next.js Toolbox" />
         <hr />
-        <p className="description">
+        <p className="text-3xl font-bold underline">
           Here's an example of a Netlify Form! When you fill this out, the
           submissions can be found in the Netlify Admin site.
         </p>
         <FeedbackForm />
         <JokeBlock />
+        <Button size={"large"}>
+          123
+        </Button>
       </main>
       <Footer />
     </div>

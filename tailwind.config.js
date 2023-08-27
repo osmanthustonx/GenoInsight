@@ -24,6 +24,9 @@ module.exports = {
           subtle: "#E8F5E9",
         },
         red: "#FF3B3B",
+        dark: {
+          4: "#E0E0E0",
+        },
       },
       fontSize: {
         d1: ["48px", "62.4px"],
@@ -38,7 +41,7 @@ module.exports = {
         bl: ["20px", "20.8px"],
         bm: ["18px", "30.6px"],
         bn: ["16px", "27.2px"],
-        bm: ["14px", "23.8px"],
+        bs: ["14px", "23.8px"],
       },
     },
   },
