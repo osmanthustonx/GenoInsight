@@ -10,7 +10,7 @@ function Button({ size, type, disabled, children, onClick }) {
   );
 }
 const button = cva(
-  ["w-[100dvw]", "flex", "justify-center", "items-center", "border"],
+  ["w-full", "flex", "justify-center", "items-center", "border"],
   {
     variants: {
       type: {
@@ -42,8 +42,20 @@ const button = cva(
       },
       size: {
         small: ["h-[48px]", "rounded-[28px]", "px-6 py-[14px]", "text-bs"],
-        normal: ["h-[55px]", "rounded-[38px]", "px-9 py-4", "text-bm", , "text-bn"],
-        medium: ["h-[62px]", "rounded-[38px]", "px-[18px] py-[64px]", "text-bm"],
+        normal: [
+          "h-[55px]",
+          "rounded-[38px]",
+          "px-9 py-4",
+          "text-bm",
+          ,
+          "text-bn",
+        ],
+        medium: [
+          "h-[62px]",
+          "rounded-[38px]",
+          "py-[18px] px-[64px]",
+          "text-bm",
+        ],
         large: ["h-[68px]", "rounded-[48px]", "px-20 py-5", "text-h3"],
       },
     },

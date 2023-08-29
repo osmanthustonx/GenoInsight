@@ -24,7 +24,13 @@ module.exports = {
           subtle: "#E8F5E9",
         },
         red: "#FF3B3B",
+        light: {
+          1: "#DDE5E9",
+        },
         dark: {
+          1: "#424242",
+          2: "#757575",
+          3: "#9E9E9E",
           4: "#E0E0E0",
         },
       },
