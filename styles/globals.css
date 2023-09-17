@@ -6,3 +6,20 @@ body {
   font-family: 'Inter', 'Mulish', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
+
+select {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.select-wrapper {
+  position: relative;
+}
+
+.select-wrapper::after {
+  content: "⌄";
+  font-size: 1rem;
+  top: 8px;
+  right: 24px;
+  position: absolute;
+}
