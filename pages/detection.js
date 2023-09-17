@@ -15,14 +15,14 @@ export default function Detection() {
 
       <main>
         <Header />
-        <section className="flex justify-center items-center w-full h-[280px]">
-          <h1 className="text-d1 text-center">基因檢測項目</h1>
+        <section className="flex justify-center items-center w-full h-[280px] bg-cover bg-no-repeat bg-[url('/images/detection_banner.png')] mb-[76px]">
+          <h1 className="text-d1 text-center text-white">基因檢測項目</h1>
         </section>
         <section className="flex  flex-col justify-center items-center w-full">
           <h2 className="text-h1 text-primary-main font-bold text-center mb-[86px]">
             一生只要做一次，精準預防、精準健康。
           </h2>
-          <div className="grid grid-cols-3 gap-10 mb-10">
+          <div className="grid grid-cols-3 gap-10 mb-[119px]">
             {TOP_PLAN.map((item) => {
               return <PlanCard key={item.title} {...item} />;
             })}

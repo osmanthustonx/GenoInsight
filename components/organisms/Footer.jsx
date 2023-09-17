@@ -5,7 +5,7 @@ import LinkItem from "@components/molecules/LinkItem";
 
 function Footer() {
   return (
-    <footer className="flex flex-row items-start border-t border-light-1 mx-[45px] mb-[49px] px-6 pt-[31px]">
+    <footer className="w-full flex flex-row items-start border-t border-light-1 mx-[45px] mb-[49px] px-6 pt-[31px]">
       <div className="mr-[112px]">
         <SiteName />
         <div className="space-y-4 mt-8 mb-4">
