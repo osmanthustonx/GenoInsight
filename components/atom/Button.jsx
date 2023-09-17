@@ -10,7 +10,7 @@ function Button({ size, intent, disabled, children, onClick, type }) {
   );
 }
 const button = cva(
-  ["w-full", "flex", "justify-center", "items-center", "border"],
+  ["w-full", "flex", "justify-center", "items-center", "border", "whitespace-nowrap"],
   {
     variants: {
       intent: {

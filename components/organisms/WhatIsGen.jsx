@@ -29,10 +29,12 @@ const INFO_CARDS = [
 
 function WhatIsGen() {
   return (
-    <section className="flex justify-center space-x-[102px]">
-      <article className="max-w-[563px]">
-        <h2 className="text-dark-1 text-d2 mb-[51px]">何謂基因檢測？</h2>
-        <div className="space-y-8">
+    <section className="flex flex-col md:flex-row justify-center md:space-x-[102px]">
+      <article className="px-7 md:px-0 md:max-w-[563px] mb-[58px] md:mb-0">
+        <h2 className="text-center md:text-left text-dark-1 font-bold text-d2 mb-4 md:mb-[51px]">
+          何謂基因檢測？
+        </h2>
+        <div className="font-bold space-y-8">
           <p className="text-lp">
             基因是掌管生長、發育、功能和特性的基本遺傳單元。基因檢測是一種科學技術，通過分析個人的DNA基因組，
             來瞭解人體的遺傳信息和特徵。
@@ -51,7 +53,7 @@ function WhatIsGen() {
           </p>
         </div>
       </article>
-      <div className="grid grid-cols-2 gap-16">
+      <div className="grid grid-cols-1 md:grid-cols-2 justify-items-center content-center gap-[35px] md:gap-16">
         {INFO_CARDS.map((card) => (
           <InfoCard key={card.title} {...card} />
         ))}
