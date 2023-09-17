@@ -15,7 +15,7 @@ function HotPlan() {
         })}
       </div>
       <div className="w-[138px] mt-16">
-        <Button type="outline">查看更多</Button>
+        <Button intent="outline">查看更多</Button>
       </div>
     </section>
   );

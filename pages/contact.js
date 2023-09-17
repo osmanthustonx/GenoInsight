@@ -130,10 +130,10 @@ function Contact() {
               <textarea
                 id="memo"
                 wrap="soft"
-                name="memo"                
+                name="memo"
                 className="w-full border border-dark-3 rounded py-3 px-6 block mb-5"
               ></textarea>
-              <Button>提交表單</Button>
+              <Button type={"submit"}>提交表單</Button>
             </form>
           </div>
         </section>

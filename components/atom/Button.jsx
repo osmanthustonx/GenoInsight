@@ -1,10 +1,10 @@
 import React from "react";
 import { cva } from "class-variance-authority";
 
-function Button({ size, type, disabled, children, onClick }) {
-  const classes = button({ size, type: disabled ? "disabled" : type });
+function Button({ size, intent, disabled, children, onClick, type }) {
+  const classes = button({ size, intent: disabled ? "disabled" : intent });
   return (
-    <button className={classes} disabled={disabled} onClick={onClick}>
+    <button className={classes} type={type} disabled={disabled} onClick={onClick}>
       {children}
     </button>
   );
@@ -13,7 +13,7 @@ const button = cva(
   ["w-full", "flex", "justify-center", "items-center", "border"],
   {
     variants: {
-      type: {
+      intent: {
         default: [
           "bg-primary-main",
           "text-white",
@@ -35,7 +35,7 @@ const button = cva(
         ],
         disabled: [
           "cursor-not-allowed",
-          "type" === "default"
+          "intent" === "default"
             ? "bg-dark-4 text-white"
             : "bg-white text-dark-4 border-dark-4",
         ],
@@ -60,7 +60,7 @@ const button = cva(
       },
     },
     defaultVariants: {
-      type: "default",
+      intent: "default",
       size: "normal",
     },
   }

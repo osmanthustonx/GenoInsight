@@ -14,7 +14,7 @@ function Banner() {
         一輩子只要做一次，就可以找到你的基因遺傳風險。
       </p>
       <div className="w-[325px]">
-        <Button size="large" type="outline">
+        <Button size="large" intent="outline">
           <p className="text-bl">立即探索基因秘密</p>
         </Button>
       </div>

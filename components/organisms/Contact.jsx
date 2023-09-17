@@ -11,7 +11,7 @@ function Contact() {
         建議您適合的基因檢測項目。
       </p>
       <div className="w-[204px]">
-        <Button type="outline">立即預約專人服務</Button>
+        <Button intent="outline">立即預約專人服務</Button>
       </div>
     </section>
   );
